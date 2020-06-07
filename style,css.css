@@ -1,0 +1,138 @@
+body {
+	background-image:url(image/4.jpg);
+	background-attachment:fixed;
+	margin:auto 0;
+}
+.jokanola{
+	margin-left:50px;
+	margin-right:50px;
+}
+
+.section{
+	/*display:inline-block;
+	padding:40px 60px;
+	margin:30px 50px;*/
+	font-size:2em;
+	border-radius:2px;
+	color:#fff;
+}
+.section:hover{
+	-moz-box-shadow:rgba(0,0,0,0.5) 0px 5px 15px;
+	-webkit-box-shadow:rgba(0,0,0,0.5) 0px 5px 15px;
+	-ms-box-shadow:rgba(0,0,0,0.5) 0px 5px 15px;
+	-o-box-shadow:rgba(0,0,0,0.5) 0px 5px 15px;
+	box-shadow:rgba(0,0,0,0.5) 0px 5px 15px;
+}
+/* NAV */
+.navigation{
+	background-color:rgba(255,0,0,0.4);
+}
+
+.main-nav{
+	display:flex;
+	margin:0;
+	list-style:none;
+	font-size:0.7em;
+}
+ @media only screen and (max-width:600px) {
+	 .main-nav{
+		 font-size:0.5em;
+		 padding:0;
+	 }
+ }
+.push{
+	margin-left:auto;
+}
+/* inorder to be responsive*/
+
+li{
+	padding:20px;
+}
+li:hover{
+	background-color:black;
+	border-color:white;
+	border:3px solid white;
+	padding:15px;
+	
+}
+a{
+	text-decoration:none;
+	color:#ffffff;
+}
+/* COVER */
+
+.cover{
+	background:url(image/cver.jpg);
+	background-repeat:no-repeat;
+	background-color:purple;
+	background-position:center;
+	background-blend-mode:screen;
+	border-radius: 0px 0px 150px 0px;
+}
+.cover > img{
+	width:80%;
+	height:80%;
+}
+
+.container{
+	display:flex;
+	justify-content: center;
+	height:50vh;
+	align-items: center;
+}
+/* PROJECT */
+.project{
+	background-image:url("image/images.jpg");
+	/*background-color:blue;*/
+}
+.grid-wrapper1 {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+}
+.box > img {
+	width:100%;
+}
+.box {
+	animation:pulse 20.0s infinite;
+	/*background-color: black;*/
+	padding:130px;
+	margin:20px;
+	border-radius:5px 75px;
+}
+
+@keyframes pulse{
+	0%{
+		background-color:rgb(205,165,125);
+	} 
+	25%{
+		background-color:rgb(250,0,100);
+	}
+	75%{
+		background-color:rgb(0,255,165);
+	}
+	
+	100%{
+		background-color:rgb(255,255,255);
+	}
+}
+.box:hover {
+	transition: all 2s scale(1.1);
+}
+
+/* FOOTER */
+.footer{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+	background-color:rgba(0,255,135,0.3);
+}
+.contact{
+	margin:10px;
+	padding:3px 10px 10px 10px;
+	font-size:0.3em;
+}
+
+/*body,.footer {
+	background-color: black;
+}

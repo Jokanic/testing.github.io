@@ -1,0 +1,74 @@
+\<!DOCTYPE html>
+<html>
+	<head>
+			<title>WEBSITE TEMPLATE BY JOKANOLA YUSUFF OLATUNJI</title>
+			<meta  name="viewpoint" content="width=device-width, initial-scale=1">
+			<meta   name="keyword" content="myfirst scratch website">
+			<link rel="stylesheet" href="css/style,css.css">
+			<link rel="" href="style,css.css">
+	</head>
+<body>
+<nav class="section navigation">
+<ul class="main-nav">
+		<li><a href="">Home</a></li>
+		<li><a href="about us.html">About us</a></li>
+		<li><a href="mygallery.html">My Gallery</a></li>
+		<li><a href="music platform/index1.html">Project</a></li>
+		<li><div onload="darkMode()" onclick="lightMode()">Dark mode</div></li>
+		<li class="push"><a href="">Contact us</a></li>
+</ul>
+</nav>
+<div class="jokanola">
+<div class="section cover container"><img id="before" src="image/messi.png" onmouseover="swapImg()" onmouseleave="swapImg2()"></div>
+<div class="section project grid-wrapper1">
+<div class="box section"><img src="image/1.png"> </div>
+<div class="box section"><img src="image/2.png"></div>
+<div class="box section"><img src="image/3.png"></div>
+<div class="box section"><img src="image/4.png"></div>
+<div class="box section"><img src="image/5.png"></div>
+<div class="box section"><img src="image/6.png"></div>
+<div class="box section"><img src="image/7.png"></div>
+<div class="box section"><img src="image/8.png"></div>
+<div class="box section"><img src="image/messi.png"></div>
+</div>
+<footer class="section footer">
+<div class="section contact"> Contact us <ul
+><a href="">Tel: 07062314302, 08168338823,</a><br />
+<a href="">Email: jokanolayusuffolatunji1@gmail.com</a></ul></div>
+<div class="section contact"> About us
+<a href="">Learn more about us</a></div>
+<div class="section contact"> follow us</div>
+</footer><script>
+	function swapImg(){
+	const Img = document.getElementById("before");
+	Img.src = "image/1.png";
+}
+function swapImg2(){
+	const Img = document.getElementById("before");
+	Img.src = "image/2.png";
+}
+function swapImg3(){
+	const Img = document.getElementById("before");
+	Img.src = "image/3.png";
+}
+
+function darkMode(){
+	
+document.querySelector("body").style.backgroundColor = "black";
+document.querySelector("footer").style.backgroundColor = "black";
+document.querySelector("nav").style.backgroundColor = "black";
+}
+
+function lightMode(){
+	
+const toggle = document.querySelector("body").style.backgroundColor = "black";
+toggle.toggle();
+//document.querySelector("footer").style.backgroundColor = "black";
+//document.querySelector("nav").style.backgroundColor = "black";
+}
+</script>
+<script style="text/javascript" src="js/quadratic equatin.js"></script>
+</body>
+</html>
+
+
